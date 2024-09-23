@@ -1,0 +1,187 @@
+body{
+    background-color: beige;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 270px 270px 270px 270px;
+}
+/* grid-area: row-start / column-start / row-end / column-end; */
+.grid-item1{
+    grid-area: 1/1/1/5;
+    text-align: start;
+}
+.grid-item2{
+    grid-area: 1/4/1/5;
+    text-align: end;
+}
+.grid-item3{
+    margin-left: 20%;
+    grid-area: 1/3/1/4;
+    text-align: end;
+}
+#afleverform{
+    border-radius: 10px;
+    border-color: black;
+    border-style: ridge;
+    border-width: 5px;
+
+    background-color: whitesmoke;
+
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: end;
+}
+#statusform{
+    border-radius: 10px;
+    border-color: black;
+    border-style: ridge;
+    border-width: 5px;
+
+    background-color: whitesmoke;
+
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: end;
+}
+#bestelform{
+    border-radius: 10px;
+    border-color: black;
+    border-style: ridge;
+    border-width: 5px;
+
+    background-color: whitesmoke;
+
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: end;
+}
+.bestelForm{
+    margin:5px;
+    margin-right: 25%;
+}
+.h1text{
+    text-align: center;
+}
+#addbestel{
+    background-color: blanchedalmond;
+
+    padding: 2%;
+
+    border-radius: 20px;
+    border-color: blanchedalmond;
+
+    width: 150px;
+}
+#afrondbutton{
+    background-color: blanchedalmond;
+
+    padding: 2%;
+
+    border-radius: 20px;
+    border-color: blanchedalmond;
+
+    width: 150px;
+}
+#statusButton{
+    background-color: blanchedalmond;
+
+    padding: 2%;
+
+    border-radius: 20px;
+    border-color: blanchedalmond;
+
+    width: 150px;
+}
+#uitlogbutton{
+    color: black;
+    background-color: blanchedalmond;
+    padding: 5%;
+
+    border-radius: 20px;
+    border-color: blanchedalmond;
+}
+#uitlogbutton:hover{
+    background-color: gray;
+}
+nav{
+    margin-top: 15px;
+}
+#HOMElink{
+    color: black;
+    background-color:burlywood;
+    padding: 15px;
+
+    border-radius: 20px;
+    border-color:ivory;
+}
+#HOMElink:hover{
+    background-color: gray;
+}
+#INSTELlink{
+    color: black;
+    background-color:burlywood;
+    padding: 15px;
+
+    border-radius: 20px;
+    border-color:ivory;
+}
+#INSTELlink:hover{
+    background-color: gray;
+}
+#VOORRAADlink{
+    color: black;
+    background-color:burlywood;
+    padding: 15px;
+
+    border-radius: 20px;
+    border-color:ivory;
+}
+#VOORRAADlink:hover{
+    background-color: gray;
+}
+#WAARDElink{
+    color: black;
+    background-color:burlywood;
+    padding: 15px;
+
+    border-radius: 20px;
+    border-color:ivory;
+}
+#WAARDElink:hover{
+    background-color: gray;
+}
+
+#BESTELlink{
+    color: black;
+    background-color:burlywood;
+    padding: 15px;
+
+    border-radius: 20px;
+    border-color:ivory;
+}
+#BESTELlink:hover{
+    background-color: gray;
+}
+#navbar{
+    color: black;
+    background-color:burlywood;
+    padding: 15px;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-color:ivory;
+}
+table, th, td {
+    border: 1px solid black;
+    background-color: white;
+}
