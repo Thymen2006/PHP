@@ -13,6 +13,9 @@ $toegevoegd = $_POST['toegevoegd'];
 
 if(!empty($bestelID) && $ISafgeleverd == 'ja' && $toegevoegd == 'ja'){
     // verwijderd de bestelling omdat het afgerond is
+    $sqlDeleteRelated = "DELETE FROM bestellingen_has_product WHERE bestellingen_idbestellingen=$bestelID";
+    mysqli_query($conn, $sqlDeleteRelated);
+
     $sql = "DELETE FROM bestellingen WHERE idbestellingen=$bestelID;";
     mysqli_query($conn, $sql);
     header("Location: FULLbestel.php");

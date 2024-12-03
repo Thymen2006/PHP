@@ -47,14 +47,6 @@ if(!isset($_SESSION['userID'])){
         <form action="FULLaddbestel.php" method="POST" id="bestelform">
         <h1 class="h1text">producten bestellen</h1>
             <fieldset>
-            <label for="productnaam">product naam:</label>
-            <input class="bestelform" type="text" name="productnaam" required><br>
-            <label for="productType">product type:</label>
-            <input class="bestelform" type="text" name="productType" required><br>
-            <label for="fabriek">fabriek:</label>
-            <input class="bestelform" type="text" name="fabriek" required><br>
-            <label for="aantalbesteld">aantal besteld:</label>
-            <input class="bestelform" type="number" name="aantalbesteld" required><br>
             <label for="besteldatum">datum besteld:</label>
             <input class="bestelform" type="date" name="besteldatum" required><br>
             <label for="leverdatum">datum levering:</label>
@@ -65,7 +57,7 @@ if(!isset($_SESSION['userID'])){
                         <option value="1">Almere</option>
                         <option value="2">Rotterdam</option>
                         <option value="3">Eindhoven</option>
-                    </select><br>
+                    </select><br>                    
                 <label for="afgeleverd">afgeleverd:</label>
                 <select class="bestelForm" name="afgeleverd" id="afgeleverd" required>
                     <option value="">Select</option>
@@ -77,8 +69,21 @@ if(!isset($_SESSION['userID'])){
 </fieldset>
         </form>
 
+        <form id="bestelProductForm" action="FULLaddproductbestel.php" method="POST">
+        <h1 class="h1text">voeg product toe aan bestelling</h1>
+            <fieldset>
+            <label for="selectbestelID">Select bestelling ID:</label>
+                    <input class="bestelForm" type="number" name="selectbestelID" max="1000000000" required><br>
+                <label for="bestelproductID">Select product ID:</label>
+                    <input class="bestelForm" type="number" name="bestelproductID" max="1000000000" required><br>
+                <label for="bestelaantal">aantal te bestellen</label>
+                    <input class="bestelForm" type="number" name="bestelaantal" max="1000000000" required><br>
+                    <input id="addProduct" type="submit" value="voeg product toe">
+            </fieldset>
+        </form>
+
         <form id="statusForm" action="FULLstatusbestel.php" method="POST">
-            <h1 class="h1text">weizig bestelling status</h1>
+            <h1 class="h1text">wijzig bestelling status</h1>
         <fieldset>
         <label for="statusbestelID">Select bestelling ID:</label>
                     <input class="bestelForm" type="number" name="statusbestelID" max="1000000000" required><br>
@@ -90,7 +95,7 @@ if(!isset($_SESSION['userID'])){
                         <option value="ja">ja</option>
                     </select><br><br>
 
-                    <input id="statusButton" type="submit" value="weizig status">
+                    <input id="statusButton" type="submit" value="wijzig status">
                 </fieldset>
         </form>
 

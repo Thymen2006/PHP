@@ -50,6 +50,21 @@ body{
     padding: 5px;
     text-align: end;
 }
+#bestelProductForm{
+    border-radius: 10px;
+    border-color: black;
+    border-style: ridge;
+    border-width: 5px;
+
+    background-color: whitesmoke;
+
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: end;
+}
 #bestelform{
     border-radius: 10px;
     border-color: black;
@@ -93,6 +108,16 @@ body{
     width: 150px;
 }
 #statusButton{
+    background-color: blanchedalmond;
+
+    padding: 2%;
+
+    border-radius: 20px;
+    border-color: blanchedalmond;
+
+    width: 150px;
+}
+#addProduct{
     background-color: blanchedalmond;
 
     padding: 2%;

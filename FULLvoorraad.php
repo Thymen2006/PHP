@@ -105,6 +105,14 @@ if(!isset($_SESSION['userID'])){
         <fieldset>
                     <label for="productID">Select ID:</label>
                     <input class="addForm" type="number" name="productID" max="1000000000" required><br>
+                    <label for="SelectDeletelocatie">Locatie:</label>
+                    <select class="addForm" name="SelectDeletelocatie" id="SelectDeletelocatie" required>
+                        <option value="">Select een Stad:</option>
+                        <option value="1">Almere</option>
+                        <option value="2">Rotterdam</option>
+                        <option value="3">Eindhoven</option>
+                        <option value="0">verwijder uit voorraad</option>
+                    </select><br><br>
 
                     <input id="DeleteButton" type="submit" value="Delete Product">
                 </fieldset>
